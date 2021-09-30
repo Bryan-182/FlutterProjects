@@ -9,7 +9,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: HomePage(),
+      theme: ThemeData(primaryColor: Colors.red),
+      initialRoute: 'home',
+      routes: {
+        'home': (_) => HomePage(),
+      },
     );
   }
 }
